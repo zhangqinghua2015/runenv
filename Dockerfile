@@ -10,9 +10,17 @@ ENV JAVA_HOME=/usr/local/jdk\
     CLASSPATH=$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$CLASSPATH
 
 # 添加文件
-ADD ./dependency/* /usr/local/
+# ADD ./dependency/* /usr/local/
 # 安装jdk、tomcat、设置root ssh远程登录密码为123456
-RUN mv /usr/local/jdk1.7.0_79/ /usr/local/jdk && \
+RUN cd /usr/local && \
+    wget http://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.16-linux-glibc2.5-x86_64.tar.gz && \
+    wget http://apache.mirror.rafal.ca/tomcat/tomcat-8/v8.5.6/bin/apache-tomcat-8.5.6.tar.gz && \
+    wget http://183.134.10.57/file3.data.weipan.cn/90572132/c4deb058f674ab732b36a101147add089cf7f134?ip=1478170420,175.11.93.32&ssig=csECVNS82n&Expires=1478172210&KID=sae,l30zoo1wmz&fn=jdk-7u79-linux-x64.tar.gz&skiprd=2&se_ip_debug=175.11.93.32&corp=2&from=1221134&wsiphost=local && \
+    wget http://download.redis.io/redis-stable.tar.gz && \
+    wget http://mirror.csclub.uwaterloo.ca/apache/zookeeper/zookeeper-3.4.8/zookeeper-3.4.8.tar.gz && \
+    tar xvf *.gz && \
+    cd && \
+    mv /usr/local/jdk1.7.0_79/ /usr/local/jdk && \
     mv /usr/local/apache-tomcat-8.5.6/ /usr/local/tomcat && \
     yum -y install gcc automake autoconf libtool make && \
     echo "root:123456" | chpasswd && \
