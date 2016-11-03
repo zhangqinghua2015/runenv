@@ -1,0 +1,11 @@
+#!/bin/bash
+#chkconfig:2345 20 90
+#description:zookeeper
+#processname:zookeeper
+case $1 in
+          start) /usr/local/zookeeper/bin/zkServer.sh start;;
+          stop) /usr/local/zookeeper/bin/zkServer.sh stop;;
+          status) /usr/local/zookeeper/bin/zkServer.sh status;;
+          restart) /usr/local/zookeeper/bin/zkServer.sh restart;;
+          *)  echo "require start|stop|status|restart"  ;;
+esac
