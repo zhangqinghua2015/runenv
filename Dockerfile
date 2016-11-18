@@ -15,7 +15,7 @@ ENV JAVA_HOME=/usr/local/jdk\
 RUN cd /usr/local && \
     wget http://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.16-linux-glibc2.5-x86_64.tar.gz && \
     wget http://apache.mirror.rafal.ca/tomcat/tomcat-8/v8.5.6/bin/apache-tomcat-8.5.6.tar.gz && \
-    wget http://183.134.10.57/file3.data.weipan.cn/90572132/c4deb058f674ab732b36a101147add089cf7f134?ip=1478170420,175.11.93.32&ssig=csECVNS82n&Expires=1478172210&KID=sae,l30zoo1wmz&fn=jdk-7u79-linux-x64.tar.gz&skiprd=2&se_ip_debug=175.11.93.32&corp=2&from=1221134&wsiphost=local && \
+    wget https://0geauomtzgwzdnpbofaaukptpcoanhaubpf18khddqczgg55p.ourdvsss.com/d0.baidupcs.com/file/9222e097e624800fdd9bfb568169ccad?bkt=p2-nj-941&xcode=f1bffc97b641830ddef4fc4b460e6f32ba8fb3387b4d9891316128a2cdfcce4d&fid=1678158691-250528-117337971851932&time=1479459267&sign=FDTAXGERLBH-DCb740ccc5511e5e8fedcff06b081203-GhBOksVo1x%2FMxej1pxUeA%2BFLLQk%3D&to=sd&fm=Nan,B,T,t&sta_dx=153512879&sta_cs=12224&sta_ft=gz&sta_ct=7&sta_mt=7&fm2=Nanjing,B,T,t&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=14009222e097e624800fdd9bfb568169ccadaae5c7c4000009266baf&sl=71368782&expires=8h&rt=sh&r=720356379&mlogid=7484427967886341503&vuk=-&vbdid=639121183&fin=jdk-7u79-linux-x64.tar.gz&slt=pm&uta=0&rtype=1&iv=0&isw=0&dp-logid=7484427967886341503&dp-callid=0.1.1&hps=1&csl=158&csign=g1sHHzT%2BFuaskSrDKR1sdy4dklM%3D&wshc_tag=0&wsts_tag=582ec1c4&wsid_tag=af0c8068&wsiphost=ipdbm && \
     wget http://download.redis.io/redis-stable.tar.gz && \
     wget http://mirror.csclub.uwaterloo.ca/apache/zookeeper/zookeeper-3.4.8/zookeeper-3.4.8.tar.gz && \
     tar xvf *.gz && \
